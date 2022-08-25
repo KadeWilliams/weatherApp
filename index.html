@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Weather App </h1>
+        <div id="switch" hidden>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                <p class="sliderTemp">&deg;<span class="tempType">F</span></p>
+            </label>
+        </div>
+    </header>
+    <form action="" onsubmit="return false;">
+        <input type="text" id="city" placeholder="Enter city" required>
+        <button class="searchButton" type="button">Search</button>
+
+    </form>
+    <section class="mainContent">
+        <div class="content">
+            <div class="weatherInfo hidden">
+                <div class="weatherInfoCard ">
+                    <div class="card-header city"></div>
+
+                    <div class="temperatureF temp"></div>
+
+                    <div>
+                        <img class="icon">
+                    </div>
+
+                    <div class="tempHighF"></div>
+
+                    <div class="tempLowF"></div>
+
+                    <div class="description"></div>
+
+                    <div class="wind"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
